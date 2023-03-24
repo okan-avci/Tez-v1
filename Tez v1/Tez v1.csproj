@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlternatifReceteKaydı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlternatifReceteKaydı.Designer.cs">
+      <DependentUpon>AlternatifReceteKaydı.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ana Ekran.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +220,9 @@
     <Compile Include="Warehouse.Designer.cs">
       <DependentUpon>Warehouse.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AlternatifReceteKaydı.resx">
+      <DependentUpon>AlternatifReceteKaydı.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ana Ekran.resx">
       <DependentUpon>Ana Ekran.cs</DependentUpon>
     </EmbeddedResource>
