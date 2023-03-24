@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E3CAA99-87BB-496A-AD73-C29DA4CD76D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tez_v1</RootNamespace>
+    <AssemblyName>Tez v1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\..\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>..\..\..\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\..\..\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>..\..\..\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ana Ekran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ana Ekran.Designer.cs">
+      <DependentUpon>Ana Ekran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Card Stock Records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Card Stock Records.Designer.cs">
+      <DependentUpon>Card Stock Records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Command.cs" />
+    <Compile Include="Depo Tanımlama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo Tanımlama.Designer.cs">
+      <DependentUpon>Depo Tanımlama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo Veritabanı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo Veritabanı.Designer.cs">
+      <DependentUpon>Depo Veritabanı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo.Designer.cs">
+      <DependentUpon>Depo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepoKayıtGenelEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepoKayıtGenelEkranı.Designer.cs">
+      <DependentUpon>DepoKayıtGenelEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GirisEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisEkranı.Designer.cs">
+      <DependentUpon>GirisEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Display.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Display.Designer.cs">
+      <DependentUpon>Main Display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recete Kaydı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recete Kaydı.Designer.cs">
+      <DependentUpon>Recete Kaydı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recete kayıt genel ekranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recete kayıt genel ekranı.Designer.cs">
+      <DependentUpon>Recete kayıt genel ekranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recete Listesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recete Listesi.Designer.cs">
+      <DependentUpon>Recete Listesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recete İzleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recete İzleme.Designer.cs">
+      <DependentUpon>Recete İzleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recete.Designer.cs">
+      <DependentUpon>Recete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceteRaporGenelEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceteRaporGenelEkranı.Designer.cs">
+      <DependentUpon>ReceteRaporGenelEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock Database %28Stock Code%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock Database %28Stock Code%29.Designer.cs">
+      <DependentUpon>Stock Database %28Stock Code%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock General Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock General Screen.Designer.cs">
+      <DependentUpon>Stock General Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok .Designer.cs">
+      <DependentUpon>Stok .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok Kartı Kayıtları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok Kartı Kayıtları.Designer.cs">
+      <DependentUpon>Stok Kartı Kayıtları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stok Veritabanı %28Stok Kodu%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok Veritabanı %28Stok Kodu%29.Designer.cs">
+      <DependentUpon>Stok Veritabanı %28Stok Kodu%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokKayıtGenelEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokKayıtGenelEkranı.Designer.cs">
+      <DependentUpon>StokKayıtGenelEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse Database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse Database.Designer.cs">
+      <DependentUpon>Warehouse Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse General Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse General Screen.Designer.cs">
+      <DependentUpon>Warehouse General Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse Identification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse Identification.Designer.cs">
+      <DependentUpon>Warehouse Identification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warehouse.Designer.cs">
+      <DependentUpon>Warehouse.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ana Ekran.resx">
+      <DependentUpon>Ana Ekran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Card Stock Records.resx">
+      <DependentUpon>Card Stock Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo Tanımlama.resx">
+      <DependentUpon>Depo Tanımlama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo Veritabanı.resx">
+      <DependentUpon>Depo Veritabanı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo.resx">
+      <DependentUpon>Depo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepoKayıtGenelEkranı.resx">
+      <DependentUpon>DepoKayıtGenelEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisEkranı.resx">
+      <DependentUpon>GirisEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Display.resx">
+      <DependentUpon>Main Display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recete Kaydı.resx">
+      <DependentUpon>Recete Kaydı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recete kayıt genel ekranı.resx">
+      <DependentUpon>Recete kayıt genel ekranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recete Listesi.resx">
+      <DependentUpon>Recete Listesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recete İzleme.resx">
+      <DependentUpon>Recete İzleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recete.resx">
+      <DependentUpon>Recete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceteRaporGenelEkranı.resx">
+      <DependentUpon>ReceteRaporGenelEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock Database %28Stock Code%29.resx">
+      <DependentUpon>Stock Database %28Stock Code%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock General Screen.resx">
+      <DependentUpon>Stock General Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok .resx">
+      <DependentUpon>Stok .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok Kartı Kayıtları.resx">
+      <DependentUpon>Stok Kartı Kayıtları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok Veritabanı %28Stok Kodu%29.resx">
+      <DependentUpon>Stok Veritabanı %28Stok Kodu%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokKayıtGenelEkranı.resx">
+      <DependentUpon>StokKayıtGenelEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse Database.resx">
+      <DependentUpon>Warehouse Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse General Screen.resx">
+      <DependentUpon>Warehouse General Screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse Identification.resx">
+      <DependentUpon>Warehouse Identification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warehouse.resx">
+      <DependentUpon>Warehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Büyütme ikonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kapatma ikonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Küçültme ikonu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X iconu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-off-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-off-button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize-window %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize-window--v1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-window %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown--v1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search--v1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gobi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gobi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gobi %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gobi %283%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
