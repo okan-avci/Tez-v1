@@ -11,14 +11,14 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace Tez_v1
 {
-    public partial class AlternatifReceteKaydı : KryptonForm
+    public partial class SatısFaturası : KryptonForm
     {
-        public AlternatifReceteKaydı()
+        public SatısFaturası()
         {
             InitializeComponent();
         }
 
-        private void AlternatifReceteKaydı_Load(object sender, EventArgs e)
+        private void SatısFaturası_Load(object sender, EventArgs e)
         {
 
         }

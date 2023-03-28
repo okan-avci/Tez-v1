@@ -33,7 +33,6 @@ namespace Tez_v1
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.kryptonDockableNavigator1 = new ComponentFactory.Krypton.Docking.KryptonDockableNavigator();
             this.kryptonPage1 = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.kryptonButton3 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonDataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,22 +40,18 @@ namespace Tez_v1
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kryptonDateTimePicker1 = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.kryptonLabel4 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonTextBox4 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonLinkLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLinkLabel();
             this.kryptonLinkLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLinkLabel();
-            this.kryptonGroupBox1 = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
-            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.kryptonMaskedTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
             this.kryptonTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonButton2 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel2 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonPage2 = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.kryptonLabel3 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonMaskedTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox();
             this.kryptonLabel11 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel10 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonTextBox7 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
@@ -81,20 +76,19 @@ namespace Tez_v1
             this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.kryptonTextBox6 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonComboBox3 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.kryptonLabel12 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableNavigator1)).BeginInit();
             this.kryptonDockableNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage1)).BeginInit();
             this.kryptonPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).BeginInit();
-            this.kryptonGroupBox1.Panel.SuspendLayout();
-            this.kryptonGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage2)).BeginInit();
             this.kryptonPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -127,13 +121,12 @@ namespace Tez_v1
             this.kryptonDockableNavigator1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonDockableNavigator1.Group.GroupBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.ButtonGallery;
             this.kryptonDockableNavigator1.Location = new System.Drawing.Point(0, 0);
-            this.kryptonDockableNavigator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kryptonDockableNavigator1.Name = "kryptonDockableNavigator1";
             this.kryptonDockableNavigator1.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
             this.kryptonPage1,
             this.kryptonPage2});
             this.kryptonDockableNavigator1.SelectedIndex = 0;
-            this.kryptonDockableNavigator1.Size = new System.Drawing.Size(1343, 519);
+            this.kryptonDockableNavigator1.Size = new System.Drawing.Size(1007, 422);
             this.kryptonDockableNavigator1.StateCommon.CheckButton.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -154,16 +147,14 @@ namespace Tez_v1
             // kryptonPage1
             // 
             this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.kryptonPage1.Controls.Add(this.kryptonButton3);
+            this.kryptonPage1.Controls.Add(this.kryptonLabel12);
+            this.kryptonPage1.Controls.Add(this.kryptonComboBox3);
             this.kryptonPage1.Controls.Add(this.kryptonButton1);
             this.kryptonPage1.Controls.Add(this.kryptonDataGridView1);
             this.kryptonPage1.Controls.Add(this.kryptonDateTimePicker1);
             this.kryptonPage1.Controls.Add(this.kryptonLabel4);
-            this.kryptonPage1.Controls.Add(this.kryptonTextBox4);
             this.kryptonPage1.Controls.Add(this.kryptonTextBox3);
-            this.kryptonPage1.Controls.Add(this.kryptonLinkLabel2);
             this.kryptonPage1.Controls.Add(this.kryptonLinkLabel1);
-            this.kryptonPage1.Controls.Add(this.kryptonGroupBox1);
             this.kryptonPage1.Controls.Add(this.kryptonTextBox1);
             this.kryptonPage1.Controls.Add(this.kryptonButton2);
             this.kryptonPage1.Controls.Add(this.kryptonLabel2);
@@ -171,10 +162,9 @@ namespace Tez_v1
             this.kryptonPage1.Controls.Add(this.kryptonTextBox2);
             this.kryptonPage1.Flags = 65534;
             this.kryptonPage1.LastVisibleSet = true;
-            this.kryptonPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonPage1.MinimumSize = new System.Drawing.Size(67, 62);
+            this.kryptonPage1.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage1.Name = "kryptonPage1";
-            this.kryptonPage1.Size = new System.Drawing.Size(1331, 474);
+            this.kryptonPage1.Size = new System.Drawing.Size(995, 381);
             this.kryptonPage1.StateCommon.HeaderGroup.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.kryptonPage1.StateCommon.HeaderGroup.Back.Color2 = System.Drawing.Color.White;
             this.kryptonPage1.StateCommon.HeaderGroup.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -185,28 +175,11 @@ namespace Tez_v1
             this.kryptonPage1.ToolTipTitle = "Page ToolTip";
             this.kryptonPage1.UniqueName = "79FACF5EFA2548C65286AE2EC869AD93";
             // 
-            // kryptonButton3
-            // 
-            this.kryptonButton3.Location = new System.Drawing.Point(268, 340);
-            this.kryptonButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.Size = new System.Drawing.Size(44, 37);
-            this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.kryptonButton3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton3.StateCommon.Border.Rounding = 10;
-            this.kryptonButton3.TabIndex = 59;
-            this.kryptonButton3.Values.Image = global::Tez_v1.Properties.Resources.s2;
-            this.kryptonButton3.Values.Text = "";
-            // 
             // kryptonButton1
             // 
-            this.kryptonButton1.Location = new System.Drawing.Point(268, 287);
-            this.kryptonButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonButton1.Location = new System.Drawing.Point(201, 193);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(44, 37);
+            this.kryptonButton1.Size = new System.Drawing.Size(33, 30);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.kryptonButton1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -226,13 +199,11 @@ namespace Tez_v1
             this.Column2,
             this.Column3,
             this.Column4,
-            this.Column5,
-            this.Column6});
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(444, 52);
-            this.kryptonDataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Column5});
+            this.kryptonDataGridView1.Location = new System.Drawing.Point(333, 42);
             this.kryptonDataGridView1.Name = "kryptonDataGridView1";
             this.kryptonDataGridView1.RowHeadersWidth = 51;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(875, 380);
+            this.kryptonDataGridView1.Size = new System.Drawing.Size(656, 309);
             this.kryptonDataGridView1.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.kryptonDataGridView1.StateCommon.Background.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.kryptonDataGridView1.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
@@ -288,128 +259,51 @@ namespace Tez_v1
             this.Column5.Name = "Column5";
             this.Column5.Width = 125;
             // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Column6";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
-            // 
             // kryptonDateTimePicker1
             // 
             this.kryptonDateTimePicker1.CalendarTodayDate = new System.DateTime(2023, 3, 22, 0, 0, 0, 0);
             this.kryptonDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(145, 406);
-            this.kryptonDateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonDateTimePicker1.Location = new System.Drawing.Point(109, 252);
             this.kryptonDateTimePicker1.Name = "kryptonDateTimePicker1";
             this.kryptonDateTimePicker1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Blue;
-            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(115, 25);
+            this.kryptonDateTimePicker1.Size = new System.Drawing.Size(86, 21);
             this.kryptonDateTimePicker1.TabIndex = 56;
             // 
             // kryptonLabel4
             // 
-            this.kryptonLabel4.Location = new System.Drawing.Point(20, 407);
-            this.kryptonLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel4.Location = new System.Drawing.Point(15, 253);
             this.kryptonLabel4.Name = "kryptonLabel4";
-            this.kryptonLabel4.Size = new System.Drawing.Size(87, 24);
+            this.kryptonLabel4.Size = new System.Drawing.Size(71, 20);
             this.kryptonLabel4.TabIndex = 55;
             this.kryptonLabel4.Values.Text = "Kayıt Tarihi";
             // 
-            // kryptonTextBox4
-            // 
-            this.kryptonTextBox4.Location = new System.Drawing.Point(145, 342);
-            this.kryptonTextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonTextBox4.Multiline = true;
-            this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.Size = new System.Drawing.Size(115, 34);
-            this.kryptonTextBox4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox4.StateCommon.Border.Rounding = 20;
-            this.kryptonTextBox4.TabIndex = 54;
-            // 
             // kryptonTextBox3
             // 
-            this.kryptonTextBox3.Location = new System.Drawing.Point(145, 289);
-            this.kryptonTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonTextBox3.Location = new System.Drawing.Point(109, 195);
             this.kryptonTextBox3.Multiline = true;
             this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Size = new System.Drawing.Size(115, 34);
+            this.kryptonTextBox3.Size = new System.Drawing.Size(86, 28);
             this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonTextBox3.StateCommon.Border.Rounding = 20;
             this.kryptonTextBox3.TabIndex = 53;
             // 
-            // kryptonLinkLabel2
-            // 
-            this.kryptonLinkLabel2.Location = new System.Drawing.Point(20, 352);
-            this.kryptonLinkLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonLinkLabel2.Name = "kryptonLinkLabel2";
-            this.kryptonLinkLabel2.Size = new System.Drawing.Size(90, 24);
-            this.kryptonLinkLabel2.TabIndex = 52;
-            this.kryptonLinkLabel2.Values.Text = "Muh. Detay";
-            // 
             // kryptonLinkLabel1
             // 
-            this.kryptonLinkLabel1.Location = new System.Drawing.Point(20, 299);
-            this.kryptonLinkLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLinkLabel1.Location = new System.Drawing.Point(15, 203);
             this.kryptonLinkLabel1.Name = "kryptonLinkLabel1";
-            this.kryptonLinkLabel1.Size = new System.Drawing.Size(89, 24);
+            this.kryptonLinkLabel1.Size = new System.Drawing.Size(72, 20);
             this.kryptonLinkLabel1.TabIndex = 51;
             this.kryptonLinkLabel1.Values.Text = "Depo Kodu";
             this.kryptonLinkLabel1.LinkClicked += new System.EventHandler(this.kryptonLinkLabel1_LinkClicked);
             // 
-            // kryptonGroupBox1
-            // 
-            this.kryptonGroupBox1.Location = new System.Drawing.Point(20, 187);
-            this.kryptonGroupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonGroupBox1.Name = "kryptonGroupBox1";
-            // 
-            // kryptonGroupBox1.Panel
-            // 
-            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonLabel3);
-            this.kryptonGroupBox1.Panel.Controls.Add(this.kryptonMaskedTextBox1);
-            this.kryptonGroupBox1.Size = new System.Drawing.Size(349, 92);
-            this.kryptonGroupBox1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.kryptonGroupBox1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.kryptonGroupBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonGroupBox1.StateCommon.Border.Rounding = 15;
-            this.kryptonGroupBox1.TabIndex = 50;
-            this.kryptonGroupBox1.Values.Heading = "KDV";
-            // 
-            // kryptonLabel3
-            // 
-            this.kryptonLabel3.Location = new System.Drawing.Point(23, 16);
-            this.kryptonLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonLabel3.Name = "kryptonLabel3";
-            this.kryptonLabel3.Size = new System.Drawing.Size(120, 24);
-            this.kryptonLabel3.TabIndex = 51;
-            this.kryptonLabel3.Values.Text = "Ürün KDV Oranı";
-            // 
-            // kryptonMaskedTextBox1
-            // 
-            this.kryptonMaskedTextBox1.Location = new System.Drawing.Point(212, 11);
-            this.kryptonMaskedTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonMaskedTextBox1.Mask = "%00";
-            this.kryptonMaskedTextBox1.Name = "kryptonMaskedTextBox1";
-            this.kryptonMaskedTextBox1.Size = new System.Drawing.Size(103, 39);
-            this.kryptonMaskedTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonMaskedTextBox1.StateCommon.Border.Rounding = 20;
-            this.kryptonMaskedTextBox1.TabIndex = 0;
-            this.kryptonMaskedTextBox1.Text = "%";
-            // 
             // kryptonTextBox1
             // 
-            this.kryptonTextBox1.Location = new System.Drawing.Point(145, 107);
-            this.kryptonTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonTextBox1.Location = new System.Drawing.Point(109, 87);
             this.kryptonTextBox1.Multiline = true;
             this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(224, 73);
+            this.kryptonTextBox1.Size = new System.Drawing.Size(168, 59);
             this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -418,10 +312,9 @@ namespace Tez_v1
             // 
             // kryptonButton2
             // 
-            this.kryptonButton2.Location = new System.Drawing.Point(377, 52);
-            this.kryptonButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonButton2.Location = new System.Drawing.Point(283, 42);
             this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(44, 48);
+            this.kryptonButton2.Size = new System.Drawing.Size(33, 39);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.kryptonButton2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -435,29 +328,26 @@ namespace Tez_v1
             // 
             // kryptonLabel2
             // 
-            this.kryptonLabel2.Location = new System.Drawing.Point(20, 129);
-            this.kryptonLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel2.Location = new System.Drawing.Point(15, 105);
             this.kryptonLabel2.Name = "kryptonLabel2";
-            this.kryptonLabel2.Size = new System.Drawing.Size(69, 24);
+            this.kryptonLabel2.Size = new System.Drawing.Size(56, 20);
             this.kryptonLabel2.TabIndex = 46;
             this.kryptonLabel2.Values.Text = "Stok Adı";
             // 
             // kryptonLabel1
             // 
-            this.kryptonLabel1.Location = new System.Drawing.Point(20, 64);
-            this.kryptonLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel1.Location = new System.Drawing.Point(15, 52);
             this.kryptonLabel1.Name = "kryptonLabel1";
-            this.kryptonLabel1.Size = new System.Drawing.Size(82, 24);
+            this.kryptonLabel1.Size = new System.Drawing.Size(67, 20);
             this.kryptonLabel1.TabIndex = 45;
             this.kryptonLabel1.Values.Text = "Stok Kodu";
             // 
             // kryptonTextBox2
             // 
-            this.kryptonTextBox2.Location = new System.Drawing.Point(145, 52);
-            this.kryptonTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonTextBox2.Location = new System.Drawing.Point(109, 42);
             this.kryptonTextBox2.Multiline = true;
             this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(224, 48);
+            this.kryptonTextBox2.Size = new System.Drawing.Size(168, 39);
             this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -467,6 +357,8 @@ namespace Tez_v1
             // kryptonPage2
             // 
             this.kryptonPage2.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kryptonPage2.Controls.Add(this.kryptonLabel3);
+            this.kryptonPage2.Controls.Add(this.kryptonMaskedTextBox1);
             this.kryptonPage2.Controls.Add(this.kryptonLabel11);
             this.kryptonPage2.Controls.Add(this.kryptonLabel10);
             this.kryptonPage2.Controls.Add(this.kryptonTextBox7);
@@ -486,10 +378,9 @@ namespace Tez_v1
             this.kryptonPage2.Controls.Add(this.kryptonLabel5);
             this.kryptonPage2.Flags = 65534;
             this.kryptonPage2.LastVisibleSet = true;
-            this.kryptonPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.kryptonPage2.MinimumSize = new System.Drawing.Size(67, 62);
+            this.kryptonPage2.MinimumSize = new System.Drawing.Size(50, 50);
             this.kryptonPage2.Name = "kryptonPage2";
-            this.kryptonPage2.Size = new System.Drawing.Size(1331, 474);
+            this.kryptonPage2.Size = new System.Drawing.Size(995, 381);
             this.kryptonPage2.StateCommon.HeaderGroup.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.kryptonPage2.StateCommon.HeaderGroup.Back.Color2 = System.Drawing.Color.White;
             this.kryptonPage2.StateCommon.HeaderGroup.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -500,31 +391,49 @@ namespace Tez_v1
             this.kryptonPage2.ToolTipTitle = "Page ToolTip";
             this.kryptonPage2.UniqueName = "202F5B68106D45107D9998D023A444D5";
             // 
+            // kryptonLabel3
+            // 
+            this.kryptonLabel3.Location = new System.Drawing.Point(272, 142);
+            this.kryptonLabel3.Name = "kryptonLabel3";
+            this.kryptonLabel3.Size = new System.Drawing.Size(67, 20);
+            this.kryptonLabel3.TabIndex = 51;
+            this.kryptonLabel3.Values.Text = "KDV Oranı";
+            // 
+            // kryptonMaskedTextBox1
+            // 
+            this.kryptonMaskedTextBox1.Location = new System.Drawing.Point(345, 133);
+            this.kryptonMaskedTextBox1.Mask = "%00";
+            this.kryptonMaskedTextBox1.Name = "kryptonMaskedTextBox1";
+            this.kryptonMaskedTextBox1.Size = new System.Drawing.Size(77, 35);
+            this.kryptonMaskedTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonMaskedTextBox1.StateCommon.Border.Rounding = 20;
+            this.kryptonMaskedTextBox1.TabIndex = 0;
+            this.kryptonMaskedTextBox1.Text = "%";
+            // 
             // kryptonLabel11
             // 
-            this.kryptonLabel11.Location = new System.Drawing.Point(387, 175);
-            this.kryptonLabel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel11.Location = new System.Drawing.Point(447, 142);
             this.kryptonLabel11.Name = "kryptonLabel11";
-            this.kryptonLabel11.Size = new System.Drawing.Size(59, 24);
+            this.kryptonLabel11.Size = new System.Drawing.Size(49, 20);
             this.kryptonLabel11.TabIndex = 64;
             this.kryptonLabel11.Values.Text = "Barkod";
             // 
             // kryptonLabel10
             // 
-            this.kryptonLabel10.Location = new System.Drawing.Point(29, 175);
-            this.kryptonLabel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel10.Location = new System.Drawing.Point(22, 142);
             this.kryptonLabel10.Name = "kryptonLabel10";
-            this.kryptonLabel10.Size = new System.Drawing.Size(43, 24);
+            this.kryptonLabel10.Size = new System.Drawing.Size(36, 20);
             this.kryptonLabel10.TabIndex = 63;
             this.kryptonLabel10.Values.Text = "Fiyat";
             // 
             // kryptonTextBox7
             // 
-            this.kryptonTextBox7.Location = new System.Drawing.Point(467, 164);
-            this.kryptonTextBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonTextBox7.Location = new System.Drawing.Point(507, 133);
             this.kryptonTextBox7.Multiline = true;
             this.kryptonTextBox7.Name = "kryptonTextBox7";
-            this.kryptonTextBox7.Size = new System.Drawing.Size(197, 41);
+            this.kryptonTextBox7.Size = new System.Drawing.Size(148, 33);
             this.kryptonTextBox7.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -533,11 +442,10 @@ namespace Tez_v1
             // 
             // kryptonTextBox5
             // 
-            this.kryptonTextBox5.Location = new System.Drawing.Point(141, 164);
-            this.kryptonTextBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonTextBox5.Location = new System.Drawing.Point(106, 133);
             this.kryptonTextBox5.Multiline = true;
             this.kryptonTextBox5.Name = "kryptonTextBox5";
-            this.kryptonTextBox5.Size = new System.Drawing.Size(197, 41);
+            this.kryptonTextBox5.Size = new System.Drawing.Size(148, 33);
             this.kryptonTextBox5.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -555,11 +463,10 @@ namespace Tez_v1
             this.dataGridViewTextBoxColumn5,
             this.Column7,
             this.Column8});
-            this.kryptonDataGridView2.Location = new System.Drawing.Point(29, 240);
-            this.kryptonDataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonDataGridView2.Location = new System.Drawing.Point(15, 195);
             this.kryptonDataGridView2.Name = "kryptonDataGridView2";
             this.kryptonDataGridView2.RowHeadersWidth = 51;
-            this.kryptonDataGridView2.Size = new System.Drawing.Size(991, 207);
+            this.kryptonDataGridView2.Size = new System.Drawing.Size(928, 168);
             this.kryptonDataGridView2.StateCommon.Background.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.kryptonDataGridView2.StateCommon.Background.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.kryptonDataGridView2.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
@@ -631,11 +538,10 @@ namespace Tez_v1
             // 
             // kryptonMaskedTextBox4
             // 
-            this.kryptonMaskedTextBox4.Location = new System.Drawing.Point(797, 107);
-            this.kryptonMaskedTextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonMaskedTextBox4.Location = new System.Drawing.Point(598, 87);
             this.kryptonMaskedTextBox4.Mask = "9.99";
             this.kryptonMaskedTextBox4.Name = "kryptonMaskedTextBox4";
-            this.kryptonMaskedTextBox4.Size = new System.Drawing.Size(103, 39);
+            this.kryptonMaskedTextBox4.Size = new System.Drawing.Size(77, 35);
             this.kryptonMaskedTextBox4.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -645,11 +551,10 @@ namespace Tez_v1
             // 
             // kryptonMaskedTextBox3
             // 
-            this.kryptonMaskedTextBox3.Location = new System.Drawing.Point(588, 107);
-            this.kryptonMaskedTextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonMaskedTextBox3.Location = new System.Drawing.Point(441, 87);
             this.kryptonMaskedTextBox3.Mask = "9.99";
             this.kryptonMaskedTextBox3.Name = "kryptonMaskedTextBox3";
-            this.kryptonMaskedTextBox3.Size = new System.Drawing.Size(103, 39);
+            this.kryptonMaskedTextBox3.Size = new System.Drawing.Size(77, 35);
             this.kryptonMaskedTextBox3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -659,11 +564,10 @@ namespace Tez_v1
             // 
             // kryptonMaskedTextBox2
             // 
-            this.kryptonMaskedTextBox2.Location = new System.Drawing.Point(425, 107);
-            this.kryptonMaskedTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonMaskedTextBox2.Location = new System.Drawing.Point(319, 87);
             this.kryptonMaskedTextBox2.Mask = "9.99";
             this.kryptonMaskedTextBox2.Name = "kryptonMaskedTextBox2";
-            this.kryptonMaskedTextBox2.Size = new System.Drawing.Size(103, 39);
+            this.kryptonMaskedTextBox2.Size = new System.Drawing.Size(77, 35);
             this.kryptonMaskedTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -673,42 +577,38 @@ namespace Tez_v1
             // 
             // kryptonLabel9
             // 
-            this.kryptonLabel9.Location = new System.Drawing.Point(709, 116);
-            this.kryptonLabel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel9.Location = new System.Drawing.Point(532, 94);
             this.kryptonLabel9.Name = "kryptonLabel9";
-            this.kryptonLabel9.Size = new System.Drawing.Size(74, 24);
+            this.kryptonLabel9.Size = new System.Drawing.Size(60, 20);
             this.kryptonLabel9.TabIndex = 56;
             this.kryptonLabel9.Values.Text = "Yükseklik";
             // 
             // kryptonLabel8
             // 
-            this.kryptonLabel8.Location = new System.Drawing.Point(539, 116);
-            this.kryptonLabel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel8.Location = new System.Drawing.Point(404, 94);
             this.kryptonLabel8.Name = "kryptonLabel8";
-            this.kryptonLabel8.Size = new System.Drawing.Size(37, 24);
+            this.kryptonLabel8.Size = new System.Drawing.Size(31, 20);
             this.kryptonLabel8.TabIndex = 55;
             this.kryptonLabel8.Values.Text = "Boy";
             // 
             // kryptonLabel7
             // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(385, 117);
-            this.kryptonLabel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel7.Location = new System.Drawing.Point(289, 95);
             this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(28, 24);
+            this.kryptonLabel7.Size = new System.Drawing.Size(24, 20);
             this.kryptonLabel7.TabIndex = 54;
             this.kryptonLabel7.Values.Text = "En";
             // 
             // kryptonNumericUpDown1
             // 
-            this.kryptonNumericUpDown1.Location = new System.Drawing.Point(244, 108);
-            this.kryptonNumericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonNumericUpDown1.Location = new System.Drawing.Point(183, 88);
             this.kryptonNumericUpDown1.Maximum = new decimal(new int[] {
             100000,
             0,
             0,
             0});
             this.kryptonNumericUpDown1.Name = "kryptonNumericUpDown1";
-            this.kryptonNumericUpDown1.Size = new System.Drawing.Size(95, 38);
+            this.kryptonNumericUpDown1.Size = new System.Drawing.Size(71, 34);
             this.kryptonNumericUpDown1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -718,10 +618,9 @@ namespace Tez_v1
             // kryptonComboBox2
             // 
             this.kryptonComboBox2.DropDownWidth = 111;
-            this.kryptonComboBox2.Location = new System.Drawing.Point(141, 110);
-            this.kryptonComboBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonComboBox2.Location = new System.Drawing.Point(106, 89);
             this.kryptonComboBox2.Name = "kryptonComboBox2";
-            this.kryptonComboBox2.Size = new System.Drawing.Size(95, 37);
+            this.kryptonComboBox2.Size = new System.Drawing.Size(71, 33);
             this.kryptonComboBox2.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -730,20 +629,18 @@ namespace Tez_v1
             // 
             // kryptonLabel6
             // 
-            this.kryptonLabel6.Location = new System.Drawing.Point(29, 116);
-            this.kryptonLabel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel6.Location = new System.Drawing.Point(22, 94);
             this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(86, 24);
+            this.kryptonLabel6.Size = new System.Drawing.Size(70, 20);
             this.kryptonLabel6.TabIndex = 50;
             this.kryptonLabel6.Values.Text = "Ölçü Birimi";
             // 
             // kryptonComboBox1
             // 
             this.kryptonComboBox1.DropDownWidth = 111;
-            this.kryptonComboBox1.Location = new System.Drawing.Point(141, 48);
-            this.kryptonComboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonComboBox1.Location = new System.Drawing.Point(106, 39);
             this.kryptonComboBox1.Name = "kryptonComboBox1";
-            this.kryptonComboBox1.Size = new System.Drawing.Size(211, 37);
+            this.kryptonComboBox1.Size = new System.Drawing.Size(158, 33);
             this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -752,11 +649,10 @@ namespace Tez_v1
             // 
             // kryptonTextBox6
             // 
-            this.kryptonTextBox6.Location = new System.Drawing.Point(387, 48);
-            this.kryptonTextBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonTextBox6.Location = new System.Drawing.Point(290, 39);
             this.kryptonTextBox6.Multiline = true;
             this.kryptonTextBox6.Name = "kryptonTextBox6";
-            this.kryptonTextBox6.Size = new System.Drawing.Size(535, 41);
+            this.kryptonTextBox6.Size = new System.Drawing.Size(401, 33);
             this.kryptonTextBox6.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -765,21 +661,36 @@ namespace Tez_v1
             // 
             // kryptonLabel5
             // 
-            this.kryptonLabel5.Location = new System.Drawing.Point(29, 52);
-            this.kryptonLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.kryptonLabel5.Location = new System.Drawing.Point(22, 42);
             this.kryptonLabel5.Name = "kryptonLabel5";
-            this.kryptonLabel5.Size = new System.Drawing.Size(82, 24);
+            this.kryptonLabel5.Size = new System.Drawing.Size(67, 20);
             this.kryptonLabel5.TabIndex = 47;
             this.kryptonLabel5.Values.Text = "Stok Kodu";
             // 
+            // kryptonComboBox3
+            // 
+            this.kryptonComboBox3.DropDownWidth = 121;
+            this.kryptonComboBox3.Location = new System.Drawing.Point(109, 162);
+            this.kryptonComboBox3.Name = "kryptonComboBox3";
+            this.kryptonComboBox3.Size = new System.Drawing.Size(121, 21);
+            this.kryptonComboBox3.TabIndex = 60;
+            this.kryptonComboBox3.Text = "Mamul ";
+            // 
+            // kryptonLabel12
+            // 
+            this.kryptonLabel12.Location = new System.Drawing.Point(15, 162);
+            this.kryptonLabel12.Name = "kryptonLabel12";
+            this.kryptonLabel12.Size = new System.Drawing.Size(58, 20);
+            this.kryptonLabel12.TabIndex = 62;
+            this.kryptonLabel12.Values.Text = "Stok Tipi";
+            // 
             // Stok_Kartı_Kayıtları
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
-            this.ClientSize = new System.Drawing.Size(1343, 519);
+            this.ClientSize = new System.Drawing.Size(1007, 422);
             this.Controls.Add(this.kryptonDockableNavigator1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Stok_Kartı_Kayıtları";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
@@ -792,17 +703,13 @@ namespace Tez_v1
             this.kryptonPage1.ResumeLayout(false);
             this.kryptonPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1.Panel)).EndInit();
-            this.kryptonGroupBox1.Panel.ResumeLayout(false);
-            this.kryptonGroupBox1.Panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroupBox1)).EndInit();
-            this.kryptonGroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage2)).EndInit();
             this.kryptonPage2.ResumeLayout(false);
             this.kryptonPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -818,22 +725,11 @@ namespace Tez_v1
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton2;
-        private ComponentFactory.Krypton.Toolkit.KryptonGroupBox kryptonGroupBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox kryptonMaskedTextBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private ComponentFactory.Krypton.Toolkit.KryptonLinkLabel kryptonLinkLabel2;
         private ComponentFactory.Krypton.Toolkit.KryptonLinkLabel kryptonLinkLabel1;
         private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
         private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker kryptonDateTimePicker1;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel4;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox kryptonTextBox6;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel11;
@@ -858,7 +754,15 @@ namespace Tez_v1
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox2;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel6;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton3;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel3;
+        private ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBox kryptonMaskedTextBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox3;
+        private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel12;
     }
 }

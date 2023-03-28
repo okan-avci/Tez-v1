@@ -104,6 +104,18 @@
     <Compile Include="DepoKayıtGenelEkranı.Designer.cs">
       <DependentUpon>DepoKayıtGenelEkranı.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetayKodKaydı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetayKodKaydı.Designer.cs">
+      <DependentUpon>DetayKodKaydı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fatura.Designer.cs">
+      <DependentUpon>Fatura.cs</DependentUpon>
+    </Compile>
     <Compile Include="GirisEkranı.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +127,18 @@
     </Compile>
     <Compile Include="Main Display.Designer.cs">
       <DependentUpon>Main Display.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuhasebeDetayKodGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuhasebeDetayKodGirisi.Designer.cs">
+      <DependentUpon>MuhasebeDetayKodGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuhasebeHesapEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuhasebeHesapEkleme.Designer.cs">
+      <DependentUpon>MuhasebeHesapEkleme.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -241,11 +265,23 @@
     <EmbeddedResource Include="DepoKayıtGenelEkranı.resx">
       <DependentUpon>DepoKayıtGenelEkranı.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DetayKodKaydı.resx">
+      <DependentUpon>DetayKodKaydı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fatura.resx">
+      <DependentUpon>Fatura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GirisEkranı.resx">
       <DependentUpon>GirisEkranı.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main Display.resx">
       <DependentUpon>Main Display.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuhasebeDetayKodGirisi.resx">
+      <DependentUpon>MuhasebeDetayKodGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuhasebeHesapEkleme.resx">
+      <DependentUpon>MuhasebeHesapEkleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
