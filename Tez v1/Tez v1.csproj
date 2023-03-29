@@ -61,11 +61,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlternatifReceteKaydı.cs">
+    <Compile Include="AlışFaturası.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlternatifReceteKaydı.Designer.cs">
-      <DependentUpon>AlternatifReceteKaydı.cs</DependentUpon>
+    <Compile Include="AlışFaturası.Designer.cs">
+      <DependentUpon>AlışFaturası.cs</DependentUpon>
     </Compile>
     <Compile Include="Ana Ekran.cs">
       <SubType>Form</SubType>
@@ -78,6 +78,12 @@
     </Compile>
     <Compile Include="Card Stock Records.Designer.cs">
       <DependentUpon>Card Stock Records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CariKartıKaydı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CariKartıKaydı.Designer.cs">
+      <DependentUpon>CariKartıKaydı.cs</DependentUpon>
     </Compile>
     <Compile Include="Command.cs" />
     <Compile Include="Depo Tanımlama.cs">
@@ -104,17 +110,17 @@
     <Compile Include="DepoKayıtGenelEkranı.Designer.cs">
       <DependentUpon>DepoKayıtGenelEkranı.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetayKodKaydı.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DetayKodKaydı.Designer.cs">
-      <DependentUpon>DetayKodKaydı.cs</DependentUpon>
-    </Compile>
     <Compile Include="Fatura.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Fatura.Designer.cs">
       <DependentUpon>Fatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FaturaKayıtGenelEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturaKayıtGenelEkranı.Designer.cs">
+      <DependentUpon>FaturaKayıtGenelEkranı.cs</DependentUpon>
     </Compile>
     <Compile Include="GirisEkranı.cs">
       <SubType>Form</SubType>
@@ -127,18 +133,6 @@
     </Compile>
     <Compile Include="Main Display.Designer.cs">
       <DependentUpon>Main Display.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MuhasebeDetayKodGirisi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MuhasebeDetayKodGirisi.Designer.cs">
-      <DependentUpon>MuhasebeDetayKodGirisi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MuhasebeHesapEkleme.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MuhasebeHesapEkleme.Designer.cs">
-      <DependentUpon>MuhasebeHesapEkleme.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -177,6 +171,12 @@
     </Compile>
     <Compile Include="ReceteRaporGenelEkranı.Designer.cs">
       <DependentUpon>ReceteRaporGenelEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SatısFaturası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatısFaturası.Designer.cs">
+      <DependentUpon>SatısFaturası.cs</DependentUpon>
     </Compile>
     <Compile Include="Stock Database %28Stock Code%29.cs">
       <SubType>Form</SubType>
@@ -244,14 +244,17 @@
     <Compile Include="Warehouse.Designer.cs">
       <DependentUpon>Warehouse.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AlternatifReceteKaydı.resx">
-      <DependentUpon>AlternatifReceteKaydı.cs</DependentUpon>
+    <EmbeddedResource Include="AlışFaturası.resx">
+      <DependentUpon>AlışFaturası.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ana Ekran.resx">
       <DependentUpon>Ana Ekran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Card Stock Records.resx">
       <DependentUpon>Card Stock Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CariKartıKaydı.resx">
+      <DependentUpon>CariKartıKaydı.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Depo Tanımlama.resx">
       <DependentUpon>Depo Tanımlama.cs</DependentUpon>
@@ -265,23 +268,17 @@
     <EmbeddedResource Include="DepoKayıtGenelEkranı.resx">
       <DependentUpon>DepoKayıtGenelEkranı.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetayKodKaydı.resx">
-      <DependentUpon>DetayKodKaydı.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Fatura.resx">
       <DependentUpon>Fatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FaturaKayıtGenelEkranı.resx">
+      <DependentUpon>FaturaKayıtGenelEkranı.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GirisEkranı.resx">
       <DependentUpon>GirisEkranı.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main Display.resx">
       <DependentUpon>Main Display.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MuhasebeDetayKodGirisi.resx">
-      <DependentUpon>MuhasebeDetayKodGirisi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MuhasebeHesapEkleme.resx">
-      <DependentUpon>MuhasebeHesapEkleme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -310,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReceteRaporGenelEkranı.resx">
       <DependentUpon>ReceteRaporGenelEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatısFaturası.resx">
+      <DependentUpon>SatısFaturası.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Stock Database %28Stock Code%29.resx">
       <DependentUpon>Stock Database %28Stock Code%29.cs</DependentUpon>

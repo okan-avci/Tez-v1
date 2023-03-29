@@ -42,5 +42,11 @@ namespace Tez_v1
             recete.Show();
 
         }
+
+        private void kryptonButton6_Click(object sender, EventArgs e)
+        {
+            Fatura fatura = new Fatura();
+            fatura.Show();
+        }
     }
 }

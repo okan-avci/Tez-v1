@@ -334,6 +334,7 @@ namespace Tez_v1
             this.Name = "AlışFaturası";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AlışFaturası";
             this.Load += new System.EventHandler(this.AlışFaturası_Load);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
